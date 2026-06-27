@@ -1,3 +1,15 @@
+# Project-specific
+mqtt_client
+mqtt_client.o
+*.o
+*.out
+compile_commands.json
+
+# Local container/runtime state
+mosquitto/log/
+mosquitto/data/*
+!mosquitto/data/.gitkeep
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -216,3 +228,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# macOS
+.DS_Store
